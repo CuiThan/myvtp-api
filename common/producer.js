@@ -19,8 +19,8 @@ var config = require('../config'); // get config file
 
 //console.log(Kafka.features);
 //console.log(Kafka.librdkafkaVersion);
-/*
 
+/*
 var producer = new Kafka.Producer({
     'metadata.broker.list': Setting.KAFKA_URI,
     'dr_cb': true
@@ -58,27 +58,3 @@ producer.on('disconnected', function(arg) {
 //starting the producer
 producer.connect();
 */
-
-router.post('/push-order',VerifyToken, function(req, resp) {
-    if (req.body.orderInfo == undefined)
-    {
-        resp.status(200).send('orderInfo is required!!!');
-        return;
-    }
-
-    resp.status(200).send({"status" : "OK", "msg" : "message reciveid!!!"});
-
-    // err === null -> valid
-    /*Joi.validate(req.body.orderInfo, ValidateOrder, function (err, value) {
-        if (err === null) {
-            var kafkaValue = new Buffer(req.body.orderInfo);
-            producer.produce(topicName, partition, kafkaValue, kafkaKey);
-        }
-        else {
-            //error
-            res.status(200).send(err);
-        };
-    });*/
-});
-
-module.exports = router;

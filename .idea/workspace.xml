@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fc72f395-0830-42f4-b0f8-cb07b430d6a1" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/Setting.js" beforeDir="false" afterPath="$PROJECT_DIR$/common/Setting.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/producer.js" beforeDir="false" afterPath="$PROJECT_DIR$/common/producer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,20 +19,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="db.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="46" selection-start-line="1" selection-start-column="46" selection-end-line="1" selection-end-column="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="producer.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="producer.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/common/producer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
-              <caret line="71" column="46" lean-forward="true" selection-start-line="71" selection-start-column="46" selection-end-line="71" selection-end-column="46" />
+            <state>
+              <caret selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -36,8 +31,8 @@
       <file leaf-file-name="order.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/validation/order.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="66" column="29" selection-start-line="66" selection-start-column="29" selection-end-line="66" selection-end-column="29" />
+            <state relative-caret-position="221">
+              <caret line="58" column="45" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="58" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -46,16 +41,16 @@
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
-              <caret line="16" column="21" lean-forward="true" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+              <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Setting.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Setting.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/common/Setting.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="1" selection-start-line="4" selection-end-line="4" selection-end-column="1" />
+            <state relative-caret-position="102">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
             </state>
           </provider>
         </entry>
@@ -68,33 +63,46 @@
       <file leaf-file-name="AuthController.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/auth/AuthController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="85" selection-start-line="85" selection-end-line="85" selection-end-column="24" />
+            <state relative-caret-position="170">
+              <caret line="10" column="3" selection-end-line="85" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="server.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server.js">
+      <file leaf-file-name="MyVTPController.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myvtp_api/MyVTPController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="3" lean-forward="true" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
+            <state relative-caret-position="189">
+              <caret line="31" column="28" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bcrypt.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/bcryptjs/dist/bcrypt.js">
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="188" column="18" selection-start-line="188" selection-start-column="18" selection-end-line="188" selection-end-column="18" />
+            <state relative-caret-position="323">
+              <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="KafkaService.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/common/KafkaService.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="28" column="45" lean-forward="true" selection-start-line="28" selection-start-column="45" selection-end-line="28" selection-end-column="45" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="VerifyToken.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/auth/VerifyToken.js">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -106,6 +114,12 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>config</find>
+      <find>Pro</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -113,12 +127,14 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/server.js" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/db.js" />
         <option value="$PROJECT_DIR$/validation/order.js" />
+        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/common/Setting.js" />
-        <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/common/KafkaService.js" />
         <option value="$PROJECT_DIR$/common/producer.js" />
+        <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/myvtp_api/MyVTPController.js" />
       </list>
     </option>
   </component>
@@ -177,6 +193,11 @@
             <path>
               <item name="MyVTP" type="b2602c69:ProjectViewProjectNode" />
               <item name="MyVTP" type="462c0819:PsiDirectoryNode" />
+              <item name="myvtp_api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyVTP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyVTP" type="462c0819:PsiDirectoryNode" />
               <item name="validation" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -195,6 +216,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -266,12 +288,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526953501695</updated>
-      <workItem from="1526953516397" duration="15642000" />
+      <workItem from="1526953516397" duration="25648000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15642000" />
+    <option name="totallyTimeSpent" value="25648000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -286,19 +308,19 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32946146" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32946146" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info id="npm" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" weight="0.32946146" />
+      <window_info anchor="bottom" id="Terminal" weight="0.35374868" />
       <window_info id="Capture Tool" />
       <window_info id="Designer" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info anchor="right" id="Database" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" />
       <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39915523" />
       <window_info id="Favorites" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -323,25 +345,30 @@
           <properties lambdaOrdinal="-1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/common/producer.js</url>
-          <line>62</line>
+          <url>file://$PROJECT_DIR$/myvtp_api/MyVTPController.js</url>
+          <line>20</line>
           <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="2" />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/myvtp_api/MyVTPController.js</url>
+          <line>31</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/common/KafkaService.js</url>
+          <line>48</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="3" />
+      <option name="time" value="10" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/config.js">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -350,60 +377,110 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/validation/order.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="66" column="29" selection-start-line="66" selection-start-column="29" selection-end-line="66" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/auth/VerifyToken.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/bcryptjs/dist/bcrypt.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="188" column="18" selection-start-line="188" selection-start-column="18" selection-end-line="188" selection-end-column="18" />
+        <state relative-caret-position="3451">
+          <caret line="229" column="15" selection-start-line="229" selection-start-column="15" selection-end-line="229" selection-end-column="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="5" column="3" lean-forward="true" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
+          <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/node-rdkafka/librdkafka.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client_app/ClientApp.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/Setting.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="1" selection-start-line="4" selection-end-line="4" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/auth/AuthController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="85" selection-start-line="85" selection-end-line="85" selection-end-column="24" />
+        <state relative-caret-position="170">
+          <caret line="10" column="3" selection-end-line="85" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
-          <caret line="16" column="21" lean-forward="true" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth/VerifyToken.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/validation/order.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="58" column="45" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="58" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/common/producer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="71" column="46" lean-forward="true" selection-start-line="71" selection-start-column="46" selection-end-line="71" selection-end-column="46" />
+        <state>
+          <caret selection-end-column="42" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/myvtp_api/MyVTPController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="31" column="28" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/KafkaService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="28" column="45" lean-forward="true" selection-start-line="28" selection-start-column="45" selection-end-line="28" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/Setting.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

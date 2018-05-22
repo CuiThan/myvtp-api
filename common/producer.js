@@ -1,5 +1,5 @@
 var Setting = require('../common/Setting')
-var Kafka = require('node-rdkafka');
+//var Kafka = require('node-rdkafka');
 var express = require('express');
 var router = express.Router();
 var bodyParser = require('body-parser');
@@ -19,6 +19,7 @@ var config = require('../config'); // get config file
 
 //console.log(Kafka.features);
 //console.log(Kafka.librdkafkaVersion);
+/*
 
 var producer = new Kafka.Producer({
     'metadata.broker.list': Setting.KAFKA_URI,
@@ -56,6 +57,7 @@ producer.on('disconnected', function(arg) {
 
 //starting the producer
 producer.connect();
+*/
 
 router.post('/push-order',VerifyToken, function(req, resp) {
     if (req.body.orderInfo == undefined)

@@ -62,11 +62,11 @@ producer.connect();
 router.post('/push-order',VerifyToken, function(req, resp) {
     if (req.body.orderInfo == undefined)
     {
-        res.status(200).send('orderInfo is required!!!');
+        resp.status(200).send('orderInfo is required!!!');
         return;
     }
 
-    res.status(200).send({"status" : "OK", "msg" : "message reciveid!!!"});
+    resp.status(200).send({"status" : "OK", "msg" : "message reciveid!!!"});
 
     // err === null -> valid
     /*Joi.validate(req.body.orderInfo, ValidateOrder, function (err, value) {
@@ -81,3 +81,4 @@ router.post('/push-order',VerifyToken, function(req, resp) {
     });*/
 });
 
+module.exports = router;

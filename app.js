@@ -10,5 +10,8 @@ app.get('/api', function (req, res) {
 var AuthController = require(__root + 'auth/AuthController');
 app.use('/api/auth', AuthController);
 
+var MyVTPAPI = require(__root + 'common/producer');
+app.use('/api/myvtp', AuthController);
+
 
 module.exports = app;

@@ -57,15 +57,17 @@ producer.on('disconnected', function(arg) {
 //starting the producer
 producer.connect();
 
-router.post('/insert-order',VerifyToken, function(req, resp) {
+router.post('/push-order',VerifyToken, function(req, resp) {
     if (req.body.orderInfo == undefined)
     {
         res.status(200).send('orderInfo is required!!!');
         return;
     }
 
+    res.status(200).send({"status" : "OK", "msg" : "message reciveid!!!"});
+
     // err === null -> valid
-    Joi.validate(req.body.orderInfo, ValidateOrder, function (err, value) {
+    /*Joi.validate(req.body.orderInfo, ValidateOrder, function (err, value) {
         if (err === null) {
             var kafkaValue = new Buffer(req.body.orderInfo);
             producer.produce(topicName, partition, kafkaValue, kafkaKey);
@@ -74,6 +76,6 @@ router.post('/insert-order',VerifyToken, function(req, resp) {
             //error
             res.status(200).send(err);
         };
-    });
+    });*/
 });
 

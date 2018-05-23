@@ -9,6 +9,7 @@ var ClientApp = require('../client_app/ClientApp');
 var Joi = require('joi');
 var ValidateOrder = require('../validation/order');
 var Setting = require('../common/Setting');
+var APIType = require('../common/APIType');
 /**
  * Configure JWT
  */
@@ -31,12 +32,15 @@ router.post('/push-order',VerifyToken, function(req, resp) {
         if (err === null) {
             var topicName = Setting.TOPIC_NAME;
             var kafkaKey = Setting.KAFKA_KEY;
-            //var kafkaValue = new Buffer(req.body);
+            var kafkaObject = new Object();
+            kafkaObject.type = APIType.PUSH_ORDER;
+            kafkaObject.data = req.body;
+            var kafkaValue = new Buffer(JSON.stringify(kafkaObject).toLowerCase());
+
             var rs = new KafkaService();
-            /*rs.sendMessage({topic: topicName,
-                messages: [JSON.stringify(req.body).toLowerCase()],
-                key: kafkaKey});*/
-            resp.status(200).send({"status" : "OK", "msg" : "message received!!!"});
+            rs.sendMessage([{topic: topicName,
+                messages: kafkaValue,
+                key: kafkaKey}], resp);
         }
         else {
             //error

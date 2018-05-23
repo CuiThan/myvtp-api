@@ -27,7 +27,7 @@ var bindListeners = function() {
 
 var initializeClient = function() {
     client = new kafka.KafkaClient({kafkaHost: Setting.KAFKA_URI});
-    producer = new kafka.HighLevelProducer(client, {});
+    producer = new kafka.HighLevelProducer(client);
     bindListeners();
 };
 
@@ -45,7 +45,7 @@ var KafkaService = function() {
     initializeClient();
 };
 
-KafkaService.prototype.sendMessage = function(payload) {
+KafkaService.prototype.sendMessage = function(payload, resp) {
     var operation = retry.operation({
         // See https://github.com/tim-kos/node-retry for config options
     });
@@ -53,12 +53,15 @@ KafkaService.prototype.sendMessage = function(payload) {
         producerReady.then(function(producer) {
             producer.send(payload, function(err, data) {
 
-                // if (err) {
-                // 	operation.retry(err);
-                // 	return;
-                // }
-
-                return messageHandler(err, data);
+                if (err) {
+                    console.log(err);
+                    resp.status(200).send({"status" : "ERROR", "msg" : err});
+                    return;
+                } else {
+                    console.log(data);
+                    resp.status(200).send({"status" : "OK", "msg" : "message received!!!"});
+                    return;
+                };
             });
         });
     });

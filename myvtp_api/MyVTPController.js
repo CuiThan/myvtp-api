@@ -27,7 +27,7 @@ router.post('/push-order',VerifyToken, function(req, resp) {
     //resp.status(200).send({"status" : "OK", "msg" : "message received!!!"});
 
     // err === null -> valid
-    Joi.validate(req.body, ValidateOrder, function (err, value) {
+    Joi.validate(JSON.stringify(req.body).toLowerCase(), ValidateOrder, function (err, value) {
         if (err === null) {
             var topicName = Setting.TOPIC_NAME;
             var kafkaKey = Setting.KAFKA_KEY;

@@ -8,7 +8,7 @@ var validateOrder = {
     cus_id : Joi.number().required(),
     partner : Joi.number(),
     delivery_date : Joi.string().required(),
-    delivery_employer : Joi.string(),
+//    delivery_employer : Joi.string(),
     sender_fullname : Joi.string().required(),
     sender_address : Joi.string().required(),
     sender_phone : Joi.string().required(),

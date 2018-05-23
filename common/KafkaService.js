@@ -26,7 +26,7 @@ var bindListeners = function() {
 };
 
 var initializeClient = function() {
-    client = new kafka.Client(Setting.ZOOKEEPER_URI, 'kafka-broker');
+    client = new kafka.KafkaClient({kafkaHost: Setting.KAFKA_URI});
     producer = new kafka.HighLevelProducer(client, {});
     bindListeners();
 };

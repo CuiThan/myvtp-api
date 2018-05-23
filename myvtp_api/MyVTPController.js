@@ -18,7 +18,7 @@ var config = require('../config'); // get config file
 
 
 router.post('/push-order',VerifyToken, function(req, resp) {
-    if (req.body.orderInfo == undefined)
+    if (req.body == undefined || Object.keys(req.body).length == 0)
     {
         resp.status(200).send('orderInfo is required!!!');
         return;
@@ -27,15 +27,16 @@ router.post('/push-order',VerifyToken, function(req, resp) {
     //resp.status(200).send({"status" : "OK", "msg" : "message received!!!"});
 
     // err === null -> valid
-    Joi.validate(req.body.orderInfo, ValidateOrder, function (err, value) {
+    Joi.validate(req.body, ValidateOrder, function (err, value) {
         if (err === null) {
             var topicName = Setting.TOPIC_NAME;
             var kafkaKey = Setting.KAFKA_KEY;
-            var kafkaValue = new Buffer(req.body.orderInfo);
+            //var kafkaValue = new Buffer(req.body);
             var rs = new KafkaService();
-            rs.sendMessage({topic: topicName,
-                messages: [kafkaValue],
-                key: kafkaKey});
+            /*rs.sendMessage({topic: topicName,
+                messages: [JSON.stringify(req.body).toLowerCase()],
+                key: kafkaKey});*/
+            resp.status(200).send({"status" : "OK", "msg" : "message received!!!"});
         }
         else {
             //error

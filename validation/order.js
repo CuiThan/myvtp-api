@@ -32,7 +32,7 @@ var validateOrder = {
     //receiver_latitude : Joi.string(),
     //receiver_longitude : Joi.string(),
     product_name : Joi.string().required(),
-    product_description : Joi.string().required(),
+    product_description : Joi.string().allow(null).required(),
     product_quantity : Joi.number().required(),
     product_price : Joi.number().required(),
     product_weight : Joi.number().required(),

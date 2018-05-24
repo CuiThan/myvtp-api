@@ -1,7 +1,7 @@
 var Joi = require('joi');
 
 var validateOrder = {
-    order_id : Joi.number().required(),
+    order_id : Joi.number().allow(null),
     order_number : Joi.string().required(),
     order_reference : Joi.string().allow(null),
     groupaddress_id : Joi.number().allow(null),
@@ -38,7 +38,7 @@ var validateOrder = {
     product_weight : Joi.number().allow(null),
     product_type : Joi.string().allow(null),
     order_payment : Joi.number().allow(null),
-    order_service : Joi.string().required(),
+    order_service : Joi.string().allow(null),
     order_service_add : Joi.string().allow(null),
     order_voucher : Joi.string().allow(null),
     order_status : Joi.number().allow(null),

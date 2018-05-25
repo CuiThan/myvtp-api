@@ -56,15 +56,16 @@ KafkaService.prototype.sendMessage = function(payload, resp) {
                 if (err) {
                     console.log(err);
                     resp.status(200).send({"status" : "ERROR", "msg" : err});
+                    closeClient();
                     return;
                 } else {
                     console.log(data);
                     resp.status(200).send({"status" : "OK", "msg" : "message received!!!"});
+                    closeClient();
                     return;
                 };
             });
         });
     });
-    //closeClient();
 };
 module.exports = KafkaService;

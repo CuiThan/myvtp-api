@@ -65,6 +65,6 @@ KafkaService.prototype.sendMessage = function(payload, resp) {
             });
         });
     });
-    closeClient();
+    //closeClient();
 };
 module.exports = KafkaService;

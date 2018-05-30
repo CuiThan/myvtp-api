@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="fc72f395-0830-42f4-b0f8-cb07b430d6a1" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/APIType.js" beforeDir="false" afterPath="$PROJECT_DIR$/common/APIType.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/Setting.js" beforeDir="false" afterPath="$PROJECT_DIR$/common/Setting.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myvtp_api/MyVTPController.js" beforeDir="false" afterPath="$PROJECT_DIR$/myvtp_api/MyVTPController.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -161,7 +158,7 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
@@ -299,15 +296,15 @@
       <workItem from="1527125665196" duration="5664000" />
       <workItem from="1527137470019" duration="4393000" />
       <workItem from="1527471575815" duration="599000" />
-      <workItem from="1527643432245" duration="4269000" />
+      <workItem from="1527643432245" duration="4987000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52720000" />
+    <option name="totallyTimeSpent" value="53438000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />

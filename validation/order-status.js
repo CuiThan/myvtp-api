@@ -5,7 +5,9 @@ var validateOrderStatus = {
     order_status : Joi.number().required(),
     tracking_time : Joi.number().required(),
     post_id : Joi.number().optional().allow(null),
-    tracking_note : Joi.string().optional().allow(null)
+    tracking_note : Joi.string().optional().allow(null),
+    cus_id : Joi.number().optional().allow(null),
+    partner : Joi.number().optional().allow(null),
 };
 
 module.exports = validateOrderStatus;

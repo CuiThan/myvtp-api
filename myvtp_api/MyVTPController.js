@@ -31,10 +31,10 @@ router.post('/push-order',VerifyToken, function(req, resp) {
     // err === null -> valid
     Joi.validate(JSON.stringify(req.body).toLowerCase(), ValidateOrderStatus, function (err, value) {
         if (err === null) {
-            var topicName = Setting.TOPIC_NAME_ORDER;
+            var topicName = Setting.TOPIC_NAME;
             var kafkaKey = Setting.KAFKA_KEY_ORDER;
             var kafkaObject = new Object();
-            kafkaObject.type = APIType.PUSH_ORDER_STATUS;
+            kafkaObject.type = APIType.PUSH_ORDER;
             kafkaObject.data = req.body;
             var kafkaValue = JSON.stringify(kafkaObject).toLowerCase();
 
@@ -61,10 +61,10 @@ router.post('/push-order-status',VerifyToken, function(req, resp) {
     // err === null -> valid
     Joi.validate(JSON.stringify(req.body).toLowerCase(), ValidateOrderStatus, function (err, value) {
         if (err === null) {
-            var topicName = Setting.TOPIC_NAME;
+            var topicName = Setting.TOPIC_NAME_ORDER;
             var kafkaKey = Setting.KAFKA_KEY;
             var kafkaObject = new Object();
-            kafkaObject.type = APIType.PUSH_ORDER;
+            kafkaObject.type = APIType.PUSH_ORDER_STATUS;
             kafkaObject.data = req.body;
             var kafkaValue = JSON.stringify(kafkaObject).toLowerCase();
 
